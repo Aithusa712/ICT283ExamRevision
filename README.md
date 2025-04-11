@@ -3,9 +3,9 @@
 
 ### [Data Structure Algorithms](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/data_structures)
 
-### [Sort Algorithms] (https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/sorting)
+### [Sort Algorithms](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/sorting)
 
-### [Search Algorithms] (https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/search)
+### [Search Algorithms](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/search)
 
 
 
