@@ -1,11 +1,11 @@
 #Algorithms
 ### [Stack](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Stack)
 
-###[Queue](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Queue)
+### [Queue](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Queue)
 
-###[Vector](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Vector)
+### [Vector](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Vector)
 
-###[Binary Search Tree](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/BST)
+### [Binary Search Tree](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/BST)
 
 # Additional links 
 ### Algorithm Repo provided by [TheAlgorithm](https://github.com/TheAlgorithms)
