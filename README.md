@@ -1,4 +1,4 @@
-#Algorithms
+# Algorithms
 ### [Stack](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Stack)
 
 ### [Queue](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Queue)
