@@ -1,3 +1,14 @@
+# Additional links 
+## Algorithm Repo by [TheAlgorithm](https://github.com/TheAlgorithms)
+
+### [Data Structure Algorithms](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/data_structures)
+
+### [Sort Algorithms](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/sorting)
+
+### [Search Algorithms] (https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/search)
+
+
+
 # Programming Concepts Revision (2025)
 
 ## UML Diagram Relationships
