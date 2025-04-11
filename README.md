@@ -8,7 +8,7 @@
 ### [Binary Search Tree](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/BST)
 
 # Additional links 
-### Algorithm Repo provided by [TheAlgorithm](https://github.com/TheAlgorithms)
+Algorithm Repo provided by [TheAlgorithm](https://github.com/TheAlgorithms)
 
 ### [Data Structure Algorithms](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/data_structures)
 
