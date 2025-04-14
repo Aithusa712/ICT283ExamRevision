@@ -1,0 +1,532 @@
+The exam answers must be done by you alone.
+
+You must be able to do all the practice exercises by yourself. Aim to do between 8 and 10 of them in 3 hours during your practice.
+
+You need to know everything about your own work, including the strengths and limitations of the work you have done. 
+
+Questions and Answers are in reverse chronological order: the early questions are the end, later questions are the top.
+
+Moderation of Assignments (1 and 2)
+ 	Your assignment marks are not final until your exam performance validates your ability. We reserve the right to revoke your assignment marks (0 marks) if your exam answers indicate that your ability is lower than what is indicated by your performance in the assignments. When this happens, you may be required to sit an invigilated assignment that is handwritten on paper. You will need to pass this invigilated assignment for your assignment marks to be re-instated.
+
+The exam is worth 50% of the unit. So you need to pass it.
+
+------------------------
+
+Q: (from student who had failed the exam and failed the unit)
+For the BST question, I implemented everything that was asked for, but my mark is 0. Why is that? I think I answered correctly.
+
+A:
+The BST question was specific in that the class interface must be minimal and complete to get any mark.
+
+Your class interface/specs in the exam had only the public methods that you implemented. That BST interface was not complete. It showed that you did not know what goes into the a BST class. For example, what does the "S" in a BST stand for? How can it even be called a BST without it? There were other missing public methods that must always be there otherwise your BST design is broken and must never be used.
+
+Similar problems existed in the questions for the other data structures questions in the exam. If you, for whatever reason, provided any data structure interface/specs that is not minimal and complete (minimum requirements to get any mark), that data structure is broken by your design choice. There will be no marks allocated to any code you write. The exam questions were specific about this requirement.
+
+There are certain methods that are mandatory when pointers are involved. These methods are needed to be counted as "minimal". Without them you have a broken data structure. But when you provide these methods when pointers are not involved, it becomes non-minimal (i.e. you are writing unnecessary code). That shows to the marker you don't know what you are doing. You will loose marks for doing unnecessary things. 
+
+Software design and code is not the same as writing essays. In essays you might write a lot and might get some marks because you got some ideas right. In code, if you write a lot, it means you are creating the potential for more bugs, more testing and more maintenance work, thus more cost. You should be getting negative marks for causing problems, but since there is no negative marking, you get no marks. 
+
+The exam questions ask to explain your reasoning. This means describe "WHY". It is not sufficient to just indicate "WHAT".
+
+Any design/code you write must follow the coding standards rules. If you don't, you have a broken data structure at design and/or code level. However much you write, you will get little to no marks.
+
+You had other issues too. You didn't know what test plans are and what unit tests are. Yet you had submitted a test plans for the revision exercise for ict159 in lab 2. If you had done this revision exercise yourself, this problem shouldn't be occurring as test plans were needed for other practical work in ict283. Test plans (table) must have test conditions that will cause a data structure to break (including crash the test program) if there is any flaw in the data structure. If the test plan doesn't have these tests, then you cannot pass the question. 
+
+You had pointless tests where you tried to insert std::string into Vector<int>.  If you provide tests like this one, you are telling the marker that not only you don't know how to design tests, you don't even know that you will not be able to get an executable to even run the test as that is a compile time error. 
+
+The unit test will do the same thing. It is a modular test program (code) designed to break any data structure that has flaws. 
+
+If the test is not designed to break a flawed data structure it means you are not  testing properly. 
+
+Improper testing has major implications in software. See the CrowdStrike example highlighted in Lab 5 QandA. A rookie error that allowed the problem to propagate and cause so much damage. 
+
+We can't let you graduate when we can see you are making rookie errors that even students completing first year should not be making.
+
+More below in earlier questions.
+
+
+
+Q: (from student preparing for supplementary exam)
+I have a doubt in Question 1 in the exam paper where it says "find the errors and give the corrected code". Will I get marks for giving the code extra functionality?
+
+A:
+If you give more code than what is asked for, you will loose marks.
+
+If you give functionality that is not asked for or required, you will violate specs and loose marks.
+
+Never write more code than required to do the job asked for. If you do, you create the potential for more bugs in code.
+
+Code that corrects bugs in the original is fine as long as the original requirements are not changed unless the exam question asks for the change in requirements. Refactoring for better design is fine but you must explain whey you are doing it. The "WHY" is *very important* for any change made. Not providing the reason for change will result in no marks (0 marks).
+
+Q:
+May I check if we can get questions from the textbook. My friend who has  the completed the ict283 module before told me that questions can come frm the textbook.
+
+I would like to double check.
+
+
+A:
+Yes, questions can come from the textbook. Such questions normally involve critique of the design, approach or code provided in the textbook. For example, your friend may have completed the exam where they were asked to evaluate figure 11-2 and figure 11-3 from the unit textbook available via LMS. This was to evaluate using the design principles perspective. These are not the only questions from the textbook. They are others, including code. And the questions have always been about critiquing the design.
+
+Questions like that are meant to be "gift" questions but unfortunately many students fail such questions as they don't think through the design issues. It appears they learn by trying to memorise and then regurgitate what has been memorised. Their answers show that don't actually know the design issues and just memorised definitions of SOLID, MVC, strategy pattern, DRY, etc. They are usually no marks for memorised definitions.
+
+Some other students are under the illusion that this is a C++ unit, and think only in C++ programming terms. They too get no marks, as the design critique is independent of programming language, even though the code to be critiqued is written in C++.  
+
+Don't forget that ICT283 is also very much about "Abstractions" and this word is part of the name of the unit.
+
+
+Q:
+I am wondering if we can use "using namespace std" in the final exam because it could save us a little time.
+
+A:
+I understand the problem and agree with you. I advice markers to allow it in the exam. 
+
+The problem is determining if students understand the consequences of opening up the std namespace in the interface files (.h)
+
+To be safe, the first time you do it, put a comment to indicate that namespace is not to be exposed, but in the exam you are doing it to save some time writing.
+
+
+Q:
+Just wondering about how close to actual code we need to be
+I'm assuming we would need to have includes on our code but I'm wondering if we need to remember to do
+#ifndef HEADER_FILE_NAME_H
+#define HEADER_FILE_NAME_H
+
+#endif // HEADER_FILE_NAME_H
+
+for our .hs as these parts i have trouble remembering since i never had to type it with the IDE auto doing it.
+
+also for our main are we able to just do
+int main()
+{
+
+return 0;
+} 
+
+A:
+Header file would have the guards, but you don't have to be literal word perfect. If you misspelt something, don't worry too much about it as it is handwritten. 
+
+By relying too much on the automation, you loose basic personal ability. So when you are a team lead and have to code review your your team's code, you might not notice something important is missing.
+
+WRT main(), yes you can use it. That is a stubbed main() that does nothing. Indent the return statement. Remember important rule about code readability by anyone. 
+
+
+Q:
+I've been going through all the exam prep and I haven't seen anything about Getters and Setters in the UML diagrams, would you like us to include them for every property?
+
+A:
+If a diagram is asked to design specific classes, check if the question is asking high level or low level. If not specific then the usual low level is to be done. Low level means detail as illustrated in the PowerPoint notes.
+
+Unless the question indicates not to show getters/setters, always show them when asked to design specific classes. 
+
+Sometimes a situation arises where you are running out of time, and if you have to show setter/getter for every member, you wouldn't finish on time. So you can show setter/getter combinations for a couple and then write a note to indicate that the other members would have similar getter/setters.  This applies to implementation in C++ as well. Show some and put a comment that the rest would be similar. When choosing some to implement, implement the more complicated ones to demonstrate that you actually know how to do it. You are trying to maximise marks in the time that you have got left in the exam.
+
+The question may ask for UML but not for designing specific classes. For example, it could be to explain relationships as in question 6 of test2.pdf. Because the focus is on relationship between classes and not designing specific classes, you can have "relative" high level diagrams but enough member details to highlight the point about the relationship that you are trying to explain.
+
+A high level diagram would just have a box and a class or struct name with no other detail. "Relative" (not a tech term) means it can have a few more details to illustrate the point you are trying to explain. It also means don't clutter with unnecessary detail that is not relevant to the point that you are trying to explain. 
+
+A low level, diagram means all detail is there - everything is there.
+
+
+Q:
+Just wondering since there's a couple of questions that say along the lines of you need to read this data from a file and store it. If it doesn't specify any restrictions am I allowed to use stl vector or do I have to write an encapsulated stl vector each time? 
+
+A:
+If the question does not prohibit STL, then you can use it or write your own.
+
+Some questions can prohibit STL, and other questions can require STL usage. So be guided by the question itself.
+
+If the question doesn't specify one way or another, you choose what you think is best.
+
+Q:
+I have gone through the labs and slides and I have noticed that for set and merge sort we only covered the algorithm, so I'm assuming in the exam we only have to do the algorithm? 
+
+A:
+No, don't make that assumption.
+
+You should be able to implement the algorithm as well.
+
+Any student coming out of the unit should be able to implement any given algorithm. See test2.pdf where you have to both know and implement the merge algorithm, and many of the Set operations.
+
+
+Q:
+since these {q1, q2 in test2.pdf} are very simple questions and OO is not required can we just put everything in 1 function? Instead of breaking it down and following single responsibility? 
+
+A:
+Never break the rules.
+
+It is a simple question but the assessment will look at how you designed the solution.
+
+If you put everything into one function, you can get a mark of 0. This is being done from the ict159 unit onwards.
+
+The design rules cannot be violated any more, even when you are writing for personal use. A habit needs to be established so that you do the right thing automatically.
+
+
+Q:
+For the exam, let's say a question asks us to write the code for a template Vector.h class.
+
+Does the class need to match with he Vector.h class that we did in the lab/assignment?
+
+I know my class is not perfect, and I wish to improve and make a change in my Vector class in the exam.
+
+A:
+In the handwritten on paper exam, you use the improved version. This would be the best version you know, understand, and can explain/defend in the exam.
+
+Only in lockdown situations where it becomes necessary to sit the exam at home, you will use the one you submitted. For the sit at home situation, the question itself will be very specific (and in bold) as to which version you have to use. 
+
+As we are not in the sit at home situation, you use the best version that you know/defend.
+
+When asked to write template data structure, you need to write everything including implementation, but be careful that you separate the implementation from the interface even though for template classes, both are in the same file. For Vector, use the lab 5 example. Related questions below.
+
+
+Q:
+Just one question please, for the exam, we need .h and .cpp separation. Should that be for all questions or only for questions where it is asked? Like for one of the questions:
+We have been asked to write C++ code to demonstrate our understanding of specialization and realization. Is the .cpp and .h separation also necessary or optional for such questions?
+
+A:
+It is necessary.
+
+Write as code comments in which file the code goes into. Implementation is separate.
+
+The exam advice in LMS has very specific advice about consequences of not having this separation.
+
+The exam QandA also addressed this question a number of times.
+
+I am putting your question into the QandA as an additional reminder.
+
+
+Q:
+I have gone through and finished the practice questions listed on LMS for the exam.
+I noticed that there where two categories of the exam in different formats.
+
+The first one was when the whole exam is related to each other, ie the bookType example where the first question is to make the UML of the classes , then the interface, then the implementation etc.
+And The second type of question was , short questions that were more theory like describing pros and cons of algorithms, explaining concepts  etc.
+
+A:
+It will be both kinds.
+
+A question can have sub-parts.
+
+Code can too be there because just explaining with just words is insufficient for demonstrating you actually know the concepts.
+
+Algorithm questions can have test plans to be written.
+
+Consider looking at the exam format document as well.
+
+
+Q:
+Does MVC fall under design patterns? As design patterns are not included in the final exam I want to make sure and utilise my time to prepare for other components of the exam. 
+
+A:
+MVC was part of the labwork. So it is examinable. 
+
+In lab 4, the view had to be separated from the model and this approach was mandated throughout the semester. 
+
+There are many design patterns. Common patterns like facade, factory, .. etc were not part of the practical work, so would not be in the exam. They are in the end of semester readings but no practical work done.
+
+More below.
+
+
+Q:
+Do we need to know the strategy design pattern. Unsure because design patterns are not in the main exam.
+
+A:
+There are later readings that cover a *lot* of design patterns. You would have no time to know or understand all of them for the main exam. So these are not going to be in the main exam.
+
+Patterns that were highlighted in the practical work can be covered.  You need to know and be able to explain these, not just the concept but be able to implement. There was a specific question related to the strategy design pattern in lab 9. So if it is related to a lab, or in a QandA file for a lab or assignment, it can be covered in the main exam. The first topic and Lab 7 has background requirement for what are design patterns, so knowing what design patterns can be covered in the main exam. Also see lab 5.
+
+The NVI pattern wasn't part of any practical work, but it is in the test pdf exam revision file. So that can't be in a main exam, but can be in a supplementary of deferred exam. The same reasoning applies to Graphs. Questions in the test1 and test2 pdf files can be in either the main and/or later exams. 
+
+Be mindful that this advice applies to design patterns and graphs only.
+
+All other data structures covered in the unit are examinable in both the main and later exams.
+
+
+Q: (post-exam question)
+Thank you for taking your time to reply my earlier email. I will be re-taking my module again next semester and I would like to ask for your kind advice regarding this module. Could you give me tips and advice on how to improve my c++ language during the term break? I would really like to do so much better than previous semester. 
+
+A: (long answer incorporating issues that were picked up post-exam)
+
+It is very important that you don't do things by trial and error. The exam will catch you if you take this approach and that will show that you have no idea of what you are doing. 
+
+ C++ is used in this unit for implementation, but even if you are a good C++ programmer, you can't pass, if you don't apply/demonstrate your knowledge of the theory/concept/principles in the application. What that means is that even a working program that gives correct results would get a fail mark if the approach used to implement is in violation of the theory/concept/principles.  
+
+A common example of what this means is the violation of low coupling principle where you use a global variable. You can make your program work with correct output, but you will still get a mark of 0. Some other examples are the SOLID principles. Whatever language you use, you must not violate these. Several of them are covered in the PowerPoint notes and these refer to minimal and complete designs, efficient designs/algorithms, separation of interface from implementation (abstraction), etc.  
+
+So, it is important to know the theory. Start from the beginning, Topic 1, where the "Essential Reading List by Topics" are in LMS. For OO, chapters 1, 2 and 5 of the eBook Design Patterns Explained by  Shalloway and Trott are important.  
+
+When assessing your work, it is assumed that you know this material as well as others that are covered in the topics and are applying it. If you are not, they you should not be passing. You cannot attempt this unit as a "tourist". You need to be fully engaged from the beginning and there are no breaks during semester/trimester.  
+
+Data Structures are the backbone of CS degrees. As a CS student, after completing this unit, there are number of things that you just must know without having to look it up. The skills that are related to this knowledge are only acquired through constant practice. 
+
+ Memorising a good Vector class will not enable you to pass. You need to know the theory and concepts that went into the design and implementation of a good Vector class. Such theory/concepts are transferable skills to other data structures and to software development in general. If you can't pick up these skills, then you need to keep redoing till you get it. 
+
+  So, redo lab and assignment in the unit yourself and apply what is covered in the topics and PowerPoint notes.  
+
+When redoing the practical work: 
+
+ 1.  design first using pen/paper. Check your design against the relevant theory/concepts/principles to see if alternative approaches could be better. 
+
+ 2. Write a test plan. Imagine that you are not the one who is going to do the test and the test plan is for a non-programmer IT student who will run the test plan. 
+
+ 3. Implement in C++ as advised in the early PowerPoint notes. Do not ignore this advice otherwise you will set yourself up to waste a lot of your own time. The unit textbook by Malik covers all the C++ you need to know for this unit. The unit reference "101 C++ Coding Standards" covers good design and implementation principles. Never hack code. Data structures code must be robust and stable.
+
+ 4. Review your implementation to see that the theory/concepts/principles are not violated. 
+
+ 5. Run your test plan carefully. 
+ 
+Q:
+In exam info in LMS, there is "You must *not* provide any coding answer that has implementation within the body of the class declaration. 
+
+Only method prototypes allowed."
+
+Does it mean to the .h file? How about template classes?
+
+
+A:
+A C++ class declaration will have only the class specification. This means the declaration of the class name, data member declarations and method prototypes. The bodies of the methods would not be in the class declaration. The class declaration/specification is found in the specification file (.h) file for the class. The bodies of the methods are found in the class's implementation file (.cpp). 
+
+Because of way template classes work (C++11), the class declaration is found in the specification file (.h) The bodies of the methods *are also* in the specification file (.h) below the class declaration. The template class declaration has method prototypes only - the same way as non-template classes, but the method bodies are below the declaration in the same specification file (.h). This is similar to the template Vector.h and Bst.h that was done during the semester.
+
+A specification is "what" is needed by the user (client) of the class or some library API that you provide. The specification relates to "what" is done by the class or library API. Specification does not show "how" the class or API works internally. "How" the class or API works internally is the implementation and this hidden from the client - information hiding principle and abstraction. So the implementation goes into the implementation file (.cpp). Templates classes would normally have  only .h - it is not a feature but a problem with information hiding. Hard problem to avoid as  template classes are not complete classes until they are bound to actual types. 
+
+(You already know that can't have an object of a template class. You need to realise the class (realisation) by specifying the actual type: Vector<int> intVec; // Template Vector is realised when bound to the int type, intVec is an object of the realised Vector template class.)
+
+Java takes a different approach. The specification is available only as a javadoc output file. The Java client programmer doesn't ever see the code - full information hiding.  C++ client programmers, on the other hand, need the .h file code. As Java class client programmers don't see any class code, there is no need to do the separation of method prototypes and method bodies. So the full method is provided in the class declaration for Java. So Java has the declaration and definition (implementation) in one place.
+
+So the advice would need to be followed as not following the advice means lack of understanding of the information hiding principle that is used for abstraction. It is far too common that people would know how to regurgitate the definition of "information hiding" but can't actually apply this principle properly.
+
+Also see readings for Topic 1.
+
+Q:
+Are there multiple choice questions in the exam like the quizzes?
+
+A:
+No. See the exam format document.
+
+You only answer what is asked for. Do not provide anything that is not asked for.
+
+
+Q: (**applicable for online exams**)
+The bst lab that I submitted had problems and kept crashing. Do I use an improved version in the exam.
+
+
+A: (extended answer - **applicable for online exams**)
+Note that in face-to-face invigilated exams written on paper, you can't bring anything with you. But you need to be aware of what had done during trimester/semester.
+
+If asked to use a particular lab version, you must use the one you submitted for the lab. If you use anything else, no marks would be given to the question. The exam is personalised as was pointed out in the workshops during the semester, including at the start of semester.
+
+It doesn't matter if your past work wasn't as good as you wanted. What you have done in the past is not being assessed in the exam. It is how you answer the exam questions and the lessons you have learnt. 
+
+As an example, your BST from the labs might not have the required methods to handle shallow copy and would therefore constitute a damaged data structure. If an exam question requires usage of the BST from the lab, **you use the damaged BST from the lab** to answer the exam question and carefully explain the issues associated with the missing methods. "Carefully explain" means you have to be very specific. General explanation like "it has problems" or "it wouldn't work", "it will crash", etc. without going into specific detail would not count, i.e. no marks.
+
+If the question asks for any needed methods that are missing, then you provide the missing methods in full and explain your reasoning very carefully.
+
+If you have to change any data structure that you submitted during semester when the question does not ask for a change, they you must provide a detailed explanation for why the change was needed. So do not change anything unless asked. The exam is personalised to you and your answers need to be trackable back to you.
+
+
+Q:
+Write the C++ specification for the template Vector class. This is the code that goes in vector.h   Since the vector would be a template class does 'specification' in this question refer to just wanting the declaration of the methods in the class itself (like a standard .h file)  or is the whole file wanted with the class declaration and the implementation underneath needed for a template class?
+
+A:
+Everything that goes in the .h. When a template class is asked for, it means everything that goes into .h file. If the implementation is not required, the question would say so.
+
+
+Q:
+If a vector question appears in the exam, does our vector only need to be able to add elements onto the end (plus all the other general requirements like the copy constructor etc...), or does it also need to for example, add elements in the middle or change an element in the array. Would the answer be the same for the STL vector as well? 
+
+A:
+It will be like assignment 1.
+
+You should be able to write your own or encapsulate STL data structures. 
+
+For **online exams**, the class interface must not change from what you submitted in the lab or assignment.
+
+For **handwritten exams that are invigilated**, you design and implement a minimal and complete class.
+
+
+Q:
+If I failed the assignment, would I fail the unit?
+
+A:
+No, exam has a higher component, so you can still pass. If 
+you have a total mark within the supplementary range, you will
+get a second chance through a supplementary. So concentrate
+on having a good exam. See related question below.
+
+
+Q:
+In exam info in LMS, there is "You must *not* provide any coding 
+answer that has implementation within the body of the class declaration. 
+Only method prototypes allowed."
+
+Does it apply to the .h file?
+
+A: (extended)
+A C++ class declaration will have only the class specification. This means the declaration of the class, data member declarations and method prototypes. The bodies of the methods would not be in the declaration. The class declaration/specification is found in the specification file (.h) file for the class. The bodies of the methods are found in the class's implementation file (.cpp). 
+
+Because of way template classes work, the class declaration is found in the specification file (.h) The bodies of the methods *are also* in the specification file (.h) below the class declaration. The class declaration has method prototypes - the same way as non-template classes. This is similar to the template Vector.h and Bst.h that was done during the semester.
+
+A specification is "what" is needed by the user (client) of the class or some library API that you provide. The specification relates to "what" is done by the class or library API. Specification does not show "how" the class or API works internally. "How" the class or API works internally is the implementation and this hidden from the client - information hiding principle. So the implementation goes into the implementation file (.cpp). Templates classes would normally have  only .h - it is not a feature but a problem with information hiding.
+
+Java takes a different approach. The specification is available only as a javadoc output file. The Java client programmer doesn't ever see the code - full information hiding.  C++ client programmers, on the other hand, need the .h file code. As Java class client programmers don't see any class code, there is no need to do the separation of method prototypes and method bodies. So the full method is provided in the class declaration for Java. See readings for Topic 1.
+
+Q:
+Would the textbook be needed for the exam?
+
+A:
+For closed book supervised book exams, you can't bring any book in.
+
+The textbook and all the PowerPoint notes would be relevant, but not necessarily because the questions could come from there. The textbook covers the C++ programming language and a number of data structures. The PowerPoint notes covers the proper design needed for information hiding, cohesion, coupling, SOLID principles, coding standards, etc., when designing data structures and software in general.
+
+Q:
+Will the exam have a complicated programming questions like in assignment 2?
+
+A:
+No, the exam will have much easier questions - more like the lab exercises. So make sure you redo the lab exercises. Don't forget **all** the QandA files which provide advice. This includes the QandA for the assignments too as these files also deal with issues related to the labs that get reused in the assignments. 
+
+Keep in mind that memorising code will not help. You may need to explain not just the "what", but you need to be explain the "why" of various approaches and algorithms. You need to be able to discuss pros/cons of various approaches.
+
+
+Q:
+Is it possible to pass if I don't sit the exam.
+
+A:
+No, it isn't possible. Please see pass requirement in the unit guide.
+
+Q:
+What if I fail the exam?
+
+A:
+There are 3 units that you do not want a fail recorded on your transcript. These are Systems Analysis, Databases, and Data Structures. It tells a potential employer a lot about your capability.
+
+Nearly 50% (often more) of the job interview questions relate to what is covered in Data Structures. It is not just Perth, or Australia, but globally as well. See the contents page of the book "Cracking the Coding Interview" http://www.crackingthecodinginterview.com/. 
+
+The author refers to "white board interviews". A number of our past graduates report having to go through this type of job interviews. All of them got the jobs, but they reported that it was a harrowing experience. 
+
+Q:
+Do I need to know how to do testing?
+
+A:
+Yes you need to know. You don't do any algorithm work or coding if you don't know how to test your algorithm or code. Knowing how to test is essential. 
+
+If testing is not possible, the algorithm or code might as well not be written because how would you know if the algorithm (or code) does what is expected of it.
+
+
+Q:
+For the BST in the exam, do we have to also know about the search, max, min, etc... functions, or just the Insert, Remove, inOrder traversal, preOrder traversal, postOrder traversal ? 
+
+A:
+Only from lab work, PowerPoint notes and textbook. You should be able to write a minimal but complete tree, know the limitations of what you have done, be able incorporate it into solutions to new problems posed in the exam. 
+
+Make sure you can write recursive routines as well and be conversant with the issues. You would have become aware of these issues when working on the lab exercises including the last assessed lab.
+
+Any new class (if asked for) you write would need the proper complement of methods/operators to enable an object of that class to behave correctly. Objects should not have memory leaks and other issues.
+
+Start with the sample Test1 and then Test2 pdf files. You
+should be able to do every question in these files by hand. What
+this means is that you should not be answering by trial and error
+during the exam. You will run out of time.
+
+
+Q:
+When you say lab work does it mean the assessed lab in Practice
+
+A:
+No, it means all labs, even the non-assessed ones. 
+
+
+Q:
+Would there be some non-programming questions? Can I pass without 
+having to do programming.
+
+
+A:
+The short answer to your question is "No". It will be impossible.
+
+Q:
+I was wondering if we're allowed to use STL data structures and 
+encapsulate them in a wrapper class as a solution?
+
+A:
+Where it is not disallowed, you can wrap (preferred approach) STL.
+Where STL is specifically asked for, you must provide these.
+
+Q:
+Would the exam have only tree and set questions?
+
+A:
+The exam can have tree and set questions, *and* other data structures.
+Please read the advice in the exam area carefully. These are data 
+structures which anyone studying CS or who has a CS degree must know.
+
+
+Q:
+Is the map or multimap used in assignment 2 be relevant for the exam?
+
+A:
+The exam questions are made independent of assignment 2. 
+
+For one thing, assignment 2 content is too complicated for an exam which runs only for a few hours. Because of the assignment complexity, it has also proved impossible to finish marking the assignment in time for the exam as the exam is set when the exam timetable is still not known. Some exams are on Saturday of the study week. 
+
+For both these reasons the labs (which include maps, bst) and assignment 1 are more relevant. 
+
+On the other hand, supplementary and deferred exams can cover other topics too as there is more time to study. 
+
+Map (or map variants) usage was needed in the labs. So you need to be able to do what was required in the labs.
+
+Q:
+Would we have to write STL data structures in the exam?
+
+A:
+No, you don't have to implement STL data structures in the exam. But you must be able to write programs that make use of STL data structures. 
+
+Your question is making me wonder what exactly you are asking. I suspect that you might be asking me about template data structures. If this is the case, the answer is yes, you need to know how to  write template data structures and template routines in the exam. 
+
+STL data structures are pre-existing data structures that use the template mechanism to achieve generality of usage. 
+
+The bst that you have to write in the later parts of labs 9 (and lab 10 is templated so that you can have the tree being able to store Unit objects, or Date objects, .. etc, without changing the tree code.
+
+You need to understand what template mechanism is and how to use 
+this mechanism in code. Java also uses the template mechanism to 
+obtain generic data structures.
+
+
+Q:
+I didn't put in the codeblocks file for the source, so that means 
+there is no build mechanism provided for the assignment. This means 
+that I will fail the assignment. Can I still pass the unit if I fail 
+the assignment? 
+
+What I really want to know is if I already failed the unit because I 
+failed the assignment, would there be any point in sitting the exam?
+
+A:
+It is not necessary to pass assignment 2. You need to have submitted 
+assignment 2 (no requirement to submit assignment 1). See the unit guide and the Assignment 2 QandA. You need to do your best with assignment 2 so whatever marks you get, is added to the total to reach 50%.
+
+
+Q:
+Will doxygen be assessed?
+
+A:
+No, but you should be able to comment your code if the question asks
+for the code to be commented or annotated. Note that only the interface is annotated with doxygen style code. Implementation has normal comments.
+
+
+Q: 
+From the excel spreadsheet in the LMS, I understand that there will
+be 5 questions each 20 marks. May I inquiry further on how many
+questions will be on coding? Just to double check, graphs will not be
+included in the exam? 
+
+A:
+Nearly every and usually all questions tend to involve C++ code.
+
+Theory questions require demonstration of the theory with C++ code. The theory and concepts would get demonstrated using your code.
+
+It is not possible to pass the unit if you can't code, as not passing
+the exam can mean failing the unit - see unit guide. 
+
+No graphs for main exam - see spreadsheet.
+
