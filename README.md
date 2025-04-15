@@ -35,7 +35,6 @@
 ## Search
 ### [Linear Search](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Search_Algorithms/Linear_Search/LinearSearch.cpp)
 #### [Video: Learn Linear Search in 3 minutes](https://youtu.be/246V51AWwZM)
-
 ### [Binary Search](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Search_Algorithms/Binary_Search/BinarySearch.cpp)
 #### [Video: Binary search in 4 minutes](https://youtu.be/fDKIpRe8GW4)
 
@@ -239,7 +238,7 @@ private:
 - Follows the mathematical definition of a set
 - Operations: Union, Intersection, Difference, Subset, Find
 
-### Maps
+### [Maps](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Data_Structures/Map/Map.h)
 - Associates a key to a value: `Map<KeyType, ValueType>`
 - Typically implemented with HashTable or BST
 - Operations: Create (Add), Read (Retrieve), Update, Delete
