@@ -1,27 +1,37 @@
 #include <iostream>
 using namespace std;
 
-void Merge(int *array, int leftSize, int *rightArray, int rightSize,
-           int startIndex) {
-  int leftIndex = 0, rightIndex = 0, currentIndex = startIndex;
+void Merge(int *array, int *leftArray, int leftSize, int *rightArray,
+           int rightSize) {
+  int leftIndex = 0;
+  int rightIndex = 0;
+  int currentIndex = 0;
 
   // Merge elements from both arrays into the array passed
   while (leftIndex < leftSize && rightIndex < rightSize) {
-    if (array[startIndex + leftIndex] > rightArray[rightIndex]) {
-      array[currentIndex++] = rightArray[rightIndex++];
+    if (leftArray[leftIndex] <= rightArray[rightIndex]) {
+      array[currentIndex] = leftArray[leftIndex];
+      leftIndex++;
+
     } else {
-      array[currentIndex++] = array[startIndex + leftIndex++];
+      array[currentIndex] = rightArray[rightIndex];
+      rightIndex++;
     }
+    currentIndex++;
   }
 
   // Copy any remaining elements from the leftArray to the main array
   while (leftIndex < leftSize) {
-    array[currentIndex++] = array[startIndex + leftIndex++];
+    array[currentIndex] = leftArray[leftIndex];
+    currentIndex++;
+    leftIndex++;
   }
 
   // Copy any remaining elements from the rightArray to the main array
   while (rightIndex < rightSize) {
-    array[currentIndex++] = rightArray[rightIndex++];
+    array[currentIndex] = rightArray[rightIndex];
+    currentIndex++;
+    rightIndex++;
   }
 }
 
@@ -48,7 +58,7 @@ void MergeSort(int *array, int size) {
   MergeSort(rightArray, size - mid);
 
   // Merge the sorted halves back into the original array
-  Merge(array, mid, rightArray, size - mid, 0);
+  Merge(array, leftArray, mid, rightArray, size - mid);
 
   delete[] leftArray;
   delete[] rightArray;
