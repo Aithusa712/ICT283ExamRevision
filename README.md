@@ -1,18 +1,33 @@
 # Algorithms
-### [Stack](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Stack)
+## Data Structures
+### [Stack](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Data_Structures/Stack/Stack.h)
 
-### [Queue](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Queue)
+### [Queue](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Data_Structures/Queue/Queue.h)
 
-### [Vector](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Vector)
+### [Vector](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Data_Structures/Vector/Vector.h)
 
-### [Binary Search Tree](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/BST)
+### [Binary Search Tree](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Data_Structures/BST/Bst.h)
+## Non-Recursive O(n²) Sorts
+### [Bubble Sort](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Non-Recursive_Sorts/BubbleSort.cpp)
+### [Insertion Sort](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Non-Recursive_Sorts/InsertionSort.cpp)
+### [Selection Sort](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Non-Recursive_Sorts/SelectionSort.cpp)
+## Recursive Sorts O(n log n) Sorts
+### [Quick Sort](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Recursive_Sorts/QuickSort.cpp)
+### [Merge Sort](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Recursive_Sorts/MergeSort.cpp)
+## Search
+### [Linear Search](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Search_Algorithms/Linear_Search/LinearSearch.cpp)
+### [Binary Search](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Search_Algorithms/Binary_Search/BinarySearch.cpp)
+
+
+
+
 
 # Additional links 
 Algorithm Repo provided by [TheAlgorithm](https://github.com/TheAlgorithms)
 
 ### [Data Structure Algorithms](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/data_structures)
 
-### [Sort Algorithms](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/sorting)
+### [Sort Algorithms](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/sorting)/
 
 ### [Search Algorithms](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/search)
 
@@ -190,7 +205,7 @@ private:
 
 ## Common Data Structures
 
-### Vectors
+### [Vectors](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Data_Structures/Vector/Vector.h)
 - Flexible array that automatically grows when required
 - Operations: Create, Read, Update, Delete
 
@@ -203,13 +218,13 @@ private:
 - Typically implemented with HashTable or BST
 - Operations: Create (Add), Read (Retrieve), Update, Delete
 
-### Stacks
+### [Stacks](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Data_Structures/Stack/Stack.h)
 - Last in, First out (LIFO) structure
 - Property: Reverses the input
 - Operations: Push (Create), Pop (Read/Delete)
 - Error conditions: Overflow (push when full), Underflow (pop when empty)
 
-### Queues
+### [Queues](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Data_Structures/Queue/Queue.h)
 - First in, First out (FIFO) structure
 - Operations: Enqueue (Create), Dequeue (Read/Delete)
 - Error conditions: Overflow (enqueue when full), Underflow (dequeue when empty)
@@ -221,12 +236,12 @@ private:
   - Recursive case
 
 ## Trees
-
+O(n log n)
 - Hierarchical series of nodes
 - Each node has a parent and children
 - Topmost node with no parent is the root
 
-### Binary Search Tree (BST)
+### [Binary Search Tree (BST)](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Data_Structures/BST/Bst.h)
 - Binary: Each node can have up to 2 children
 - Search: Follows BST property (smaller elements left, larger elements right)
 - Operations:
@@ -245,10 +260,10 @@ Note: If trees are not balanced, operations may degrade to O(n)
 ## Algorithms
 
 ### Searching
-- **Linear Search**
+- **[Linear Search](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Search_Algorithms/Linear_Search/LinearSearch.cpp)**
   - Visit every element in the list
   - Worst case: O(n) when target not found or at the end
-- **Binary Search**
+- **[Binary Search](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Search_Algorithms/Binary_Search/BinarySearch.cpp)**
   - Precondition: Sorted list
   - Start in the middle and divide search space in half each time
   - Time complexity: O(log n)
@@ -260,13 +275,13 @@ Note: If trees are not balanced, operations may degrade to O(n)
 ### Sorting
 
 #### O(n²) Algorithms
-- **Selection Sort**: Extract minimum item and move to front
-- **Insertion Sort**: Create sorted sublist on left, insert each new item
-- **Bubble Sort**: Swap adjacent items pairwise from left to right
+- **[Selection Sort](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Non-Recursive_Sorts/SelectionSort.cpp)**: Extract minimum item and move to front
+- **[Insertion Sort](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Non-Recursive_Sorts/InsertionSort.cpp)**: Create sorted sublist on left, insert each new item
+- **[Bubble Sort](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Non-Recursive_Sorts/BubbleSort.cpp)**: Swap adjacent items pairwise from left to right
 
 #### O(n log n) Algorithms
-- **Quicksort**: Recursively partition a list
-- **Mergesort**: Recursively break down list, then merge using merge algorithm
+- **[Quicksort](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Recursive_Sorts/QuickSort.cpp)**: Recursively partition a list
+- **[Mergesort](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Recursive_Sorts/MergeSort.cpp)**: Recursively break down list, then merge using merge algorithm
 
 ### Hashing
 - Used for mappings (key → value)
