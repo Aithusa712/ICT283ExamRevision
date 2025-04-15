@@ -69,7 +69,10 @@ Base Class ------< > Aggregated Class
 
 ### Additional UML Notes
 - For template classes, add a dotted [T] in the upper right corner
-<img src="https://coderanch.com/t/626984/a/5041/UML_class_diagram_template.png" alt="dotted T" width="300"/>
+<p align="center">
+  <img src="https://coderanch.com/t/626984/a/5041/UML_class_diagram_template.png" alt="dotted T" width="300"/>
+</p>
+
 - Attributes are almost always private
 - Methods can be public or private
 
