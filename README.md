@@ -1,35 +1,35 @@
 # Algorithms
 ## Data Structures
 ### [Stack](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Data_Structures/Stack/Stack.h)
-#### Video: [Stack in 3 minutes](https://youtu.be/KcT3aVgrrpU)
+#### [Video: Stack in 3 minutes](https://youtu.be/KcT3aVgrrpU)
 
 ### [Queue](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Data_Structures/Queue/Queue.h)
-#### Video: [Queues in 3 minutes](https://youtu.be/D6gu-_tmEpQ)
+#### [Video: Queues in 3 minutes](https://youtu.be/D6gu-_tmEpQ)
 
 ### [Vector](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Data_Structures/Vector/Vector.h)
-#### Video: [C++ Vectors Explained in 168 seconds](https://youtu.be/2XZrX_-yLrA)
+#### [Video: C++ Vectors Explained in 168 seconds](https://youtu.be/2XZrX_-yLrA)
 
 ### [Binary Search Tree](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Data_Structures/BST/Bst.h)
-#### Video: [B-trees in 4 minutes](https://youtu.be/FgWbADOG44s)
+#### [Video: B-trees in 4 minutes](https://youtu.be/FgWbADOG44s)
 
 ### [Watch this video on YouTube](https://youtu.be/FgWbADOG44s)
 ## Non-Recursive O(n²) Sorts
 ### [Bubble Sort](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Non-Recursive_Sorts/BubbleSort.cpp)
-#### Video: [Bubble sort in 2 minutes](https://youtu.be/xli_FI7CuzA)
+#### [Video: Bubble sort in 2 minutes](https://youtu.be/xli_FI7CuzA)
 ### [Insertion Sort](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Non-Recursive_Sorts/InsertionSort.cpp)
-#### Video: [Insertion sort in 2 minutes](https://youtu.be/JU767SDMDvA)
+#### [Video: Insertion sort in 2 minutes](https://youtu.be/JU767SDMDvA)
 ### [Selection Sort](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Non-Recursive_Sorts/SelectionSort.cpp)
-#### Video: [Selection sort in 3 minutes](https://youtu.be/g-PGLbMth_g)
+#### [Video: Selection sort in 3 minutes](https://youtu.be/g-PGLbMth_g)
 ## Recursive Sorts O(n log n) Sorts
 ### [Quick Sort](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Recursive_Sorts/QuickSort.cpp)
-#### Video: [Quick sort in 4 minutes](https://youtu.be/Hoixgm4-P4M)
+#### [Video: Quick sort in 4 minutes](https://youtu.be/Hoixgm4-P4M)
 ### [Merge Sort](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Recursive_Sorts/MergeSort.cpp)
-#### Video: [Merge sort in 3 minutes](https://youtu.be/4VqmGXwpLqc?list=PL9xmBV_5YoZOZSbGAXAPIq1BeUf4j20pl)
+#### [Video: Merge sort in 3 minutes](https://youtu.be/4VqmGXwpLqc?list=PL9xmBV_5YoZOZSbGAXAPIq1BeUf4j20pl)
 ## Search
 ### [Linear Search](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Search_Algorithms/Linear_Search/LinearSearch.cpp)
-#### Video: [Learn Linear Search in 3 minutes](https://youtu.be/246V51AWwZM)
+#### [Video: Learn Linear Search in 3 minutes](https://youtu.be/246V51AWwZM)
 ### [Binary Search](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Search_Algorithms/Binary_Search/BinarySearch.cpp)
-#### Video: [Binary search in 4 minutes](https://youtu.be/fDKIpRe8GW4)
+#### [Video: Binary search in 4 minutes](https://youtu.be/fDKIpRe8GW4)
 
 
 
