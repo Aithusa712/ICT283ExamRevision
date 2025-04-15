@@ -50,6 +50,8 @@ Algorithm Repo provided by [TheAlgorithm](https://github.com/TheAlgorithms)
 
 ## UML Diagram Relationships
 
+![UML Diagram](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40baraguantonyy%2Funderstanding-uml-class-diagrams-a-beginners-guide-7f829b7c8fce&psig=AOvVaw25yYAQDqZec5_GeYhsryUC&ust=1744810877279000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLis5ZiV2owDFQAAAAAdAAAAABAE)
+
 ### Inheritance / Specialization
 ```
 Inherited Class ----|>  Base Class
