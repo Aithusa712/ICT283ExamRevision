@@ -25,12 +25,13 @@
 ### [Selection Sort](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Non-Recursive_Sorts/SelectionSort.cpp)
 #### [Video: Selection sort in 3 minutes](https://youtu.be/g-PGLbMth_g)
 
+### [Merge Sorted List](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Non-Recursive_Sorts/MergeSortedLists.cpp)
+
 ## Recursive Sorts O(n log n) Sorts
 ### [Quick Sort](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Recursive_Sorts/QuickSort.cpp)
 #### [Video: Quick sort in 4 minutes](https://youtu.be/Hoixgm4-P4M)
 
 ### [Merge Sort](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Recursive_Sorts/MergeSort.cpp)
-### [Merge Sorted List](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Non-Recursive_Sorts/MergeSortedLists.cpp)
 #### [Video: Merge sort in 3 minutes](https://youtu.be/4VqmGXwpLqc?list=PL9xmBV_5YoZOZSbGAXAPIq1BeUf4j20pl)
 
 ## Search
