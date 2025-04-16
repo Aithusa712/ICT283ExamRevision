@@ -28,9 +28,9 @@ private:
 };
 
 template <typename T> Stack<T>::Stack() {
-  Arr = new T[1];
   Top = -1;
   Capacity = 10; // Set how many pringles you want to store here.
+  Arr = new T[Capacity];
 }
 
 template <typename T> Stack<T>::~Stack() { delete[] Arr; }
@@ -38,6 +38,7 @@ template <typename T> Stack<T>::~Stack() { delete[] Arr; }
 template <typename T> void Stack<T>::push(const T &value) {
   if (IsFull()) {
     cout << "Stack Overflow" << endl;
+    throw -1;
     // For a dynamic stack implementation, uncomment below.
     // Resize();
     // Arr[++Top] = value;
@@ -49,7 +50,7 @@ template <typename T> void Stack<T>::push(const T &value) {
 template <typename T> T &Stack<T>::pop() {
   if (IsEmpty()) {
     cout << "No more pringles, big sad.";
-    return;
+    throw -1;
   } else {
     return Arr[Top--];
   }
