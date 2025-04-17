@@ -238,7 +238,7 @@ private:
 - Flexible array that automatically grows when required
 - Operations: Create, Read, Update, Delete
 
-### Sets
+### [Sets](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Data_Structures/Sets/Sets.h)
 - Follows the mathematical definition of a set
 - Operations: Union, Intersection, Difference, Subset, Find
 

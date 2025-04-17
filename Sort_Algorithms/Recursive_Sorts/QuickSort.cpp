@@ -2,30 +2,31 @@
 using namespace std;
 
 int Partition(int *array, int low, int high) {
-  int pivot = array[high];  // Take last element of the array as pivot
-  int leftwall = (low - 1); // Index of smaller element
+  int pivot = array[high]; // Take last element of the array as pivot
+  int leftwall = low;      // Index of smaller element
 
   for (int i = low; i < high; i++) {
     // If current element is smaller or equal to pivot
     if (array[i] <= pivot) {
-      leftwall++; // Increment index of smaller element
-
       // SWAP
       int temp = array[i];
       array[i] = array[leftwall];
       array[leftwall] = temp;
+
+      leftwall++; // Increment index of smaller element
     }
   }
   // SWAP
-  int temp = array[leftwall + 1];
-  array[leftwall + 1] = array[high];
+  int temp = array[leftwall];
+  array[leftwall] = array[high];
   array[high] = temp;
 
-  return (leftwall + 1);
+  return (leftwall);
 }
 
 void QuickSort(int *array, int low, int high) {
   if (low < high) {
+
     int pivot_location = Partition(array, low, high);
 
     QuickSort(array, low, pivot_location - 1);
