@@ -15,6 +15,8 @@
 ### [std::maps(wrapper only)](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Data_Structures/Map/Map.h)
 #### [Video: Red-black trees in 4 minutes - Intro](https://youtu.be/qvZGUFHWChY) (Map is implemented as Red-black trees, unordered_maps are hash based)
 
+### [Sets](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Data_Structures/Sets/Sets.h)
+
 ## Non-Recursive O(n²) Sorts
 ### [Bubble Sort](https://github.com/Aithusa712/ICT283ExamRevision/tree/main/Sort_Algorithms/Non-Recursive_Sorts/BubbleSort.cpp)
 #### [Video: Bubble sort in 2 minutes](https://youtu.be/xli_FI7CuzA)
